@@ -10,6 +10,23 @@ A special thanks to everyone who [contributed to JDT](acknowledgements.md#java-d
 ---
 ## JUnit
 
+### Add Refactor to Change Signature for Record ParameterizedTest
+<!-- https://github.com/eclipse-jdt/eclipse.jdt.ui/pull/3121 -->
+
+<details>
+<summary>Contributors</summary>
+* [Ivan Gualandri](https://github.com/inuyasha82)
+</details>
+
+Add a new refactoring, that let now users to change the record signature, in the same way of a method.
+
+The animation below show how this works:
+![Animation Demo of how Refactoring record signature works.](images/RecordSignatureRefactor.gif)
+
+The refactor also update all the references in the code as well, not only the declaration. It can be initiated either from the Record Declaration, from any Record instantiation anywhere else in the project. 
+
+Parameters removal and reordering is still supported. 
+
 ### Disabled Parameterized Tests in the JUnit View
 <!-- https://github.com/eclipse-jdt/eclipse.jdt.ui/pull/3144 -->
 
